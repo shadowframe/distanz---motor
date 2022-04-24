@@ -11,8 +11,9 @@ oled = SSD1306_I2C(128, 64, i2c)
 # distance = sensor.distance_cm()
 sensor = HCSR04(trigger_pin=14, echo_pin=15)
 
-# Zeichenfläche wird geleert
+# Zeichenfläche wird geleert jhjh
 oled.fill(0)
+
 
 
 # An die Stelle 0, 0 wird "Hello:" geschrieben
@@ -27,7 +28,7 @@ while True:
     oled.fill(0)
     oled.text("Distance:", 0, 0)
     distance = sensor.distance_cm()
-    print('Distance:', distance, 'cm')
+    print('Distance jan:', distance, 'cm')
     oled.text(str(distance) + " cm", 0, 10)
     oled.show()
     utime.sleep(1)
