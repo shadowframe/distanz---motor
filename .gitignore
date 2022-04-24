@@ -1,2 +1,10 @@
 .vscode/settings.json
 .vscode/arduino.json
+.idea/distanz---motor.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/libraries/MicroPython.xml
+.idea/runConfigurations/Flash_test_py.xml
+.idea/.gitignore
