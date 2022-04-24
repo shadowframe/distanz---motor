@@ -14,6 +14,7 @@ sensor = HCSR04(trigger_pin=14, echo_pin=15)
 # Zeichenfläche wird geleert
 oled.fill(0)
 
+
 # An die Stelle 0, 0 wird "Hello:" geschrieben
 oled.text("Hello:", 0, 0)
 oled.show()
