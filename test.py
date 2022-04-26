@@ -1,6 +1,7 @@
 from machine import Pin, I2C
 from ssd1306 import SSD1306_I2C
 import utime
+import dcmotor
 from hcsr04 import HCSR04
 
 # Es wird I2C 0 verwendet Pin (GP0) und Pin (GP1)
@@ -30,5 +31,8 @@ while True:
     print('Distance jan:', distance, 'cm')
     oled.text(str(distance) + " cm", 0, 10)
     oled.show()
+    if distance < 10:
+        dcmotor.forward()
+        utime.sleep(2)
+        dcmotor.motor_stop()
     utime.sleep(1)
-
