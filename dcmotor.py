@@ -49,6 +49,11 @@ def stop_right():
     motor2b.low()
 
 
+'''
+Multi Motor functions
+'''
+
+
 # all engines forward, backward, stop
 
 
