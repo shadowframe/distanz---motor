@@ -72,6 +72,9 @@ def motor_stop():
     stop_right()
 
 
+# left and right
+
+
 def left():
     backward_left()
     forward_right()
